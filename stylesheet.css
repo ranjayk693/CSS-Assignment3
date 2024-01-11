@@ -1,0 +1,92 @@
+/* Resetting default margin, padding, and box-sizing for all elements */
+* {
+  /*shorthand property*/
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*body style*/
+body {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+/* content styles */
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 800px; /*setting the content of width 800px*/
+  height: 500px; /*setting the content of height 500px*/
+  border: 1px solid black;
+  padding: 1rem;
+  margin: 3rem;
+}
+
+/* Top card styles */
+.top-card {
+  background-color: #ff9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 45%;
+  padding: 1.5rem;
+  border: 1px solid black;
+}
+
+.top-card > h1 {
+  font-size: 1.8rem;
+}
+
+.top-card > p {
+  margin-top: 1rem;
+  font-size: 1.3rem;
+}
+
+/* Bottom card styles */
+.bottom-card {
+  display: flex;
+  height: 60%;
+  display: grid;
+  grid-template-columns: 65% 35%;
+  border: 1px solid black;
+}
+
+/* Left side styles */
+.left {
+  background: rgb(254, 254, 83);
+  background-image: url("./bg.png");
+  background-size: cover;
+  padding: 1rem;
+  border: 0.7rem solid rgb(245, 242, 62);
+}
+
+/* Right side styles */
+.right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem;
+  background-color: #ececfb;
+  border: 1px solid black;
+}
+
+.right img {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 1rem;
+}
+
+.right h1 {
+  font-size: 1.8rem;
+}
+
+.right p {
+  font-size: 1.2rem;
+  text-align: center;
+}
